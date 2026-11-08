@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  estoque-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tc-estoque-service
+    ports:
+      - "5104:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__MongoDB: mongodb://admin:tc-local-pass@host.docker.internal:27017/TechChallengeEstoque?authSource=admin
+      RabbitMQ__Host: host.docker.internal
+      RabbitMQ__Port: "5672"
+      RabbitMQ__Username: guest
+      RabbitMQ__Password: guest
+      Jwt__Key: tc-local-dev-secret-key-min32chars
+      Jwt__Issuer: TechChallenger
+      Jwt__Audience: TechChallenger
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,8 @@
+aws_region            = "us-east-1"
+environment           = "prod"
+project_name          = "techchallenge"
+system_user_id        = "00000000-0000-0000-0000-000000000001"
+mongodb_root_password = "SenhaForte123"
+rabbitmq_username     = "admin"
+rabbitmq_password     = "SenhaRabbit456"
+jwt_key               = "sua-chave-jwt-com-pelo-menos-32-caracteres-aqui"
