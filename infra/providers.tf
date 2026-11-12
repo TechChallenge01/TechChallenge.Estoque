@@ -1,4 +1,4 @@
-terraform {
+﻿terraform {
   required_version = ">= 1.6"
 
   required_providers {
@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "techchallenge-tfstate"
+    bucket         = "techchallenge-tfstate-891376923749"
     key            = "techchallenge/estoque/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "techchallenge-tflock"
@@ -28,3 +28,4 @@ provider "aws" {
     }
   }
 }
+
