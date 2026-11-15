@@ -215,7 +215,7 @@ dotnet test tests/UnitTests
 dotnet test tests/UnitTests --collect:"XPlat Code Coverage" --results-directory coverage/
 ```
 
-- **Cobertura mínima:** 80% (validada pelo SonarCloud no CI)
+- **Cobertura:** fluxos críticos de estoque (reserva, liberação, compensação) — relatório no SonarCloud
 - **Relatório:** artefato `coverage-report-estoque` em cada execução do `quality.yml`
 
 ---
