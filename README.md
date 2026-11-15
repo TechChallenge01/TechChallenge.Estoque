@@ -2,6 +2,10 @@
 
 > Fase 4 — FIAP SOAT · Arquitetura de Microsserviços com Saga Pattern
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechChallenge01_TechChallenge.Estoque&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechChallenge01_TechChallenge.Estoque)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TechChallenge01_TechChallenge.Estoque&metric=coverage)](https://sonarcloud.io/summary/new_code?id=TechChallenge01_TechChallenge.Estoque)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=TechChallenge01_TechChallenge.Estoque&metric=bugs)](https://sonarcloud.io/summary/new_code?id=TechChallenge01_TechChallenge.Estoque)
+
 Microsserviço responsável pelo **controle de estoque de peças**, reservando itens quando uma OS é aberta e liberando-os caso ela seja cancelada. Participa da Saga coreografada como serviço de suporte ao fluxo principal.
 
 ---
